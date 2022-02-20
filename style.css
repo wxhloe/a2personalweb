@@ -1,0 +1,320 @@
+div.b1{
+	background: rgb(153,164,188,0.5); /*background for the body of platinumtravel page, make it 50% transparant*/ 
+}
+
+div.b{
+	background: rgb(128,137,122,0.5);/*background for the body of rewards page, make it 50% transparant*/ 
+}
+
+div.b2{
+	background:rgb(102,102,102,0.5);/*background for the body of firstclasstravel page, make it 50% transparant*/ 
+}
+
+div.b3{
+	background-image:url("bgt.jpg");/*background for the body of aboutme page, insert an image*/ 
+}	
+
+
+/*make the image to center, apply to all images, except for background image*/	
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+
+/*headline style for index page*/	
+h1 {
+	font-size:60px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	border: 3.5px solid rgb(207,215,176);
+	padding: 15px;
+	background-color: rgb(207,215,176);
+	color:darkslategrey;
+}
+
+/*headline style for rewards, platinumtravel and firstclasstravel page*/
+h2{
+	font-size:40px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	border: 3.0px solid darkgreen;
+	padding: 10px;
+	background-color: darkgreen;
+	color:Gainsboro;
+}
+
+/*headline style for aboutme page*/
+h3{
+	font-size:40px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	border: 3.0px solid rgb(167,154,123);
+	padding: 10px;
+	background-color: rgb(167,154,123);
+	color:Gainsboro;
+}
+
+/*paragraph style for index page*/
+.p1 {
+	font-size: 20px;
+	font-family: arial,helvetica,sans-serif;
+	border: 3.5px solid #949995;
+	background-color: #949995;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:5px;
+	color:#f1f7e9;
+}
+
+/*paragraph style for rewards page*/
+.p2{
+	font-size: 20px;
+	font-family: arial,helvetica,sans-serif;
+	border: 3.5px solid rgb(128,137,122);
+	background-color: rgb(128,137,122);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:5px;
+	color:gainsboro
+}	
+
+/*paragraph style for platinumtravel page*/
+.p3{
+	font-size: 20px;
+	font-family: arial,helvetica,sans-serif;
+	border: 3.5px solid rgb(153,164,188);
+	background-color: rgb(153,164,188);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:5px;
+	color:gainsboro
+}	
+
+/*paragraph style for text "Style not satisfied..." in rewards and platinum page*/
+.p4{
+	font-size: 40px;
+	font-style: italic;
+	font-family: arial,helvetica,sans-serif;
+	margin-left: 30px;
+	margin-right: 30px;
+	color:maroon;
+}	
+
+/*paragraph style for firstclasstravel page*/
+.p5{
+	font-size: 20px;
+	font-family: arial,helvetica,sans-serif;
+	border: 3.5px solid #666666;
+	background-color: #666666;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:5px;
+	color:gainsboro;
+}	
+
+/*paragraph style for aboutme page*/
+.p6{
+	font-size: 20px;
+	font-family: arial,helvetica,sans-serif;
+	border: 3.5px solid rgb(121,124,136);
+	background-color:rgb(121,124,136);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:5px;
+	color:gainsboro;
+}	
+
+/*style for navigation bar in every page, name the mother as ul and child as li*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow:hidden;
+	background-color:darkolivegreen;
+}
+
+/*float to left*/
+li{
+	float: left;
+}
+
+/*set font, margin, display as block, color. padding, text-align*/
+li a{
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left:auto;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 20px;
+	text-decoration: none;
+}
+
+/*make the list active, set background color*/
+li a:hover:not(.active){
+	background-color:darkseagreen;
+}
+
+/*set the active background color*/
+.active{
+	background-color:rgb(205,164,156);
+}
+
+/*set table style, set font, border, width, background color and margin*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: gray;
+  margin:auto;
+}
+
+/*set style for both td and th in table, set border, padding, and text-align to left*/
+td, th {
+  border: 2px solid green;
+  text-align: left;
+  padding: 8px;
+ }
+/*set even lines background color to #dddddd*/
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*modification starts here 2022.2.19*/
+.topnav {
+  overflow: hidden;
+  background-color: darkolivegreen;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:auto;
+  color: white;
+  padding: 30px 36px;
+}
+
+.topnav a:hover {
+  background-color: darkseagreen;
+  color: white;
+}
+
+.topnav a.active {
+	background-color:rgb(205,164,156);
+	color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+body {
+  margin: 0;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("bg.jpg"); /*insert background image, make it same to every page*/
+}
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(205,164,156);
+  color: white;
+}
